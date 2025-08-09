@@ -1,0 +1,16 @@
+services:
+  black-hole-sim:
+    build: .
+    container_name: black-hole-3d
+    ports:
+      - "5900:5900"  # VNC port
+    environment:
+      - DISPLAY=:1
+      - LIBGL_ALWAYS_SOFTWARE=1
+      - GALLIUM_DRIVER=llvmpipe
+    volumes:
+      - ./config:/app/config
+      - ./logs:/app/logs
+    stdin_open: true
+    tty: true
+    restart: unless-stopped

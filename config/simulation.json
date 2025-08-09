@@ -1,0 +1,88 @@
+{
+  "window": {
+    "width": 1200,
+    "height": 800,
+    "title": "Enhanced 3D Black Hole Simulation",
+    "vsync": true,
+    "fullscreen": false,
+    "multisampling": 4
+  },
+  "camera": {
+    "fov": 60.0,
+    "nearPlane": 1e8,
+    "farPlane": 1e12,
+    "initialRadius": 6.34194e10,
+    "minRadius": 1e10,
+    "maxRadius": 1e12,
+    "orbitSpeed": 0.015,
+    "zoomSpeed": 25e9,
+    "dampingFactor": 0.95,
+    "smoothMovement": true
+  },
+  "blackHole": {
+    "mass": 8.54e36,
+    "position": [0.0, 0.0, 0.0],
+    "name": "Sagittarius A*"
+  },
+  "accretionDisk": {
+    "innerRadius": 2.785e10,
+    "outerRadius": 6.595e10,
+    "temperature": 10000.0,
+    "thickness": 1e9,
+    "enabled": true
+  },
+  "objects": [
+    {
+      "name": "Test Object 1",
+      "position": [4e11, 0.0, 0.0],
+      "radius": 4e10,
+      "color": [1.0, 1.0, 0.0, 1.0],
+      "mass": 1.98892e30,
+      "velocity": [0.0, 0.0, 0.0]
+    },
+    {
+      "name": "Test Object 2", 
+      "position": [0.0, 0.0, 4e11],
+      "radius": 4e10,
+      "color": [1.0, 0.0, 0.0, 1.0],
+      "mass": 1.98892e30,
+      "velocity": [0.0, 0.0, 0.0]
+    }
+  ],
+  "physics": {
+    "enableGravity": false,
+    "gravityConstant": 6.67430e-11,
+    "speedOfLight": 299792458.0,
+    "timeStep": 0.016666,
+    "integrationMethod": "rk4"
+  },
+  "rendering": {
+    "adaptiveQuality": true,
+    "movingResolution": [400, 300],
+    "staticResolution": [800, 600],
+    "maxGeodesicSteps": 50000,
+    "movingGeodesicSteps": 30000,
+    "stepSize": 1e7,
+    "backgroundColor": [0.0, 0.0, 0.05, 1.0],
+    "enableGrid": true,
+    "gridSpacing": 1e10,
+    "gridSize": 25
+  },
+  "performance": {
+    "logInterval": 5.0,
+    "targetFPS": 60,
+    "enableVSync": true
+  },
+  "controls": {
+    "mouseSensitivity": 1.0,
+    "scrollSensitivity": 1.0,
+    "keyboardSensitivity": 1.0,
+    "invertY": false
+  },
+  "debug": {
+    "showFPS": true,
+    "showCameraInfo": false,
+    "showPhysicsInfo": false,
+    "logLevel": "INFO"
+  }
+}
