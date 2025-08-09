@@ -2,7 +2,7 @@
   "window": {
     "width": 1200,
     "height": 800,
-    "title": "Enhanced 3D Black Hole Simulation",
+    "title": "3D Black Hole Simulation",
     "vsync": true,
     "fullscreen": false,
     "multisampling": 4

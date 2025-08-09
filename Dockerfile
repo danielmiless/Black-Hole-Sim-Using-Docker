@@ -92,7 +92,7 @@ fluxbox -display :1 &\n\
 sleep 2\n\
 \n\
 # Start VNC server for remote viewing\n\
-x11vnc -display :1 -nopw -listen localhost -xkb -forever &\n\
+x11vnc -display :1 -nopw -listen 0.0.0.0 -xkb -forever &\n\
 sleep 1\n\
 \n\
 # Run the black hole simulation\n\

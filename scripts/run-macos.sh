@@ -37,12 +37,12 @@ echo "📺 Connect to VNC at localhost:5900 to view the simulation"
 echo "🛑 Press Ctrl+C to stop the container"
 
 # Run container with proper settings for macOS
-docker run -it --rm \\
-    --name black-hole-sim \\
-    --platform linux/amd64 \\
-    -p 5900:5900 \\
-    -v "$(pwd)/config:/app/config" \\
-    -v "$(pwd)/logs:/app/logs" \\
+docker run -it --rm \
+    --name black-hole-sim \
+    --platform linux/amd64 \
+    -p 5900:5900 \
+    -v "$(pwd)/config:/app/config" \
+    -v "$(pwd)/logs:/app/logs" \
     black-hole-3d
 
 # Clean up X11 forwarding
